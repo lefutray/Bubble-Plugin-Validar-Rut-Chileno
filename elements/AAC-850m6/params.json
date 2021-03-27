@@ -1,0 +1,41 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 40,
+        "width": 40
+    },
+    "display": "Validador RUT",
+    "fields": {
+        "AAD": {
+            "caption": "RUT_numero",
+            "doc": "Ingrese el RUT sin puntos y guión",
+            "editor": "DynamicValue",
+            "name": "RUT_numero",
+            "optional": true,
+            "rank": 0,
+            "value": "_any_thing"
+        }
+    },
+    "icon": "ion-card",
+    "states": {
+        "AAE": {
+            "caption": "RUT es válido",
+            "doc": "Retorna \"true\" si el RUT es válido",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "valido",
+            "value": "boolean"
+        },
+        "AAF": {
+            "caption": "Rut es válido Text",
+            "doc": "Retorna texto si el RUT es válido",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\n\n}"
+            },
+            "name": "validoText",
+            "value": "text"
+        }
+    }
+}

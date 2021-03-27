@@ -1,0 +1,10 @@
+{
+    "categories": {
+        "0": "web scraping"
+    },
+    "description": "Validador del RUT Chileno\n\nRecibe el valor de entrada y \"Devuelve verdadero o falso\" o \"Devuelve un texto RUT válido\"",
+    "image": "//s3.amazonaws.com/appforest_uf/f1616807735823x878082011634665200/validaRutx64.png",
+    "license": "open_source",
+    "name": "Validar Rut Chileno",
+    "plugin_instructions": "Validador del RUT Chileno\n\nRecibe el valor de entrada y devuelve \"verdadero o falso\" o devuelve un texto \"RUT válido\""
+}
