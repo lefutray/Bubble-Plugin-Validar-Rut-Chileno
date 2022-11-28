@@ -7,7 +7,7 @@ function(instance, properties, context) {
    //Comprobar si el valor de entrada está vacío "eliminar error"
    if(rut==null){
     instance.publishState('valido', "")
-    instance.publishState('validoText', "")
+    instance.publishState('resultadoText', "")
          return false;
     }
     
@@ -45,26 +45,26 @@ const limpiarRUT = rut => {
   return String(rut).replace(/[^0-9a-z]/gi, '');
 }
     
-      //Retorna salida de datos true o  false
+      //Retorna salida de datos true o false
       var valido = validaRUT(rut);
     
     
-    //verificar se foi digitado os 11 digitos do RUT
+    //Verificar los digitos ingresados
     if(rut.length==9)
     {
     
      instance.publishState('valido', valido)
       
     if(valido)
-      instance.publishState('validoText', "RUT es válido")
+      instance.publishState('resultadoText', "RUT es válido")
     else
-      instance.publishState('validoText', "RUT es invalido")
+      instance.publishState('resultadoText', "Error: RUT no es válido")
         
     } 
     else
     {
      instance.publishState('valido', "")
-	 instance.publishState('validoText',"")
+	 instance.publishState('resultadoText',"")
     }
    
 }
